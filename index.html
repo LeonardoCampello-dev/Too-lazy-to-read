@@ -16,16 +16,20 @@
 
             <img src="book.svg" alt="Book">
 
-            <div class="text" contenteditable>Your text here</div>
+            <div 
+                class="text" 
+                contenteditable
+                oninput="setText(event)"
+            >Your text here</div>
 
             <div class="actions">
 
-                <button class="speak">
+                <button class="speak" onclick="speak()">
                     Speak
                     <i class="material-icons">record_voice_over</i>
                 </button>
     
-                <button class="stop">
+                <button class="stop" onclick="stop()">
                     Stop
                     <i class="material-icons">pan_tool</i>
                 </button>
