@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,600&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
     outline: none;
 
     box-sizing: border-box;
-}
-
-body {
-    background-color: #2F3437;
 }
 
 body, 
@@ -19,79 +11,10 @@ button {
     font-family: 'Poppins', monospace;
 }
 
-.container {
-    width: 60%;
-    margin: 56px auto;
-
-    text-align: center;
-}
-
-.container img {
-    width: 180px;
-
-    margin-bottom: 32px;
-}
-
-.text {
-    background-color: #fff;
-    color: #2F3437;
-
-    font-size: 24px;
-    line-height: 34px;
-
-    padding: 8px 16px;
-    border-radius: 8px;
-}
-
-.actions {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.actions button {
-    color: #fff;
-    width: 128px;
-    
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .2px;
-
-    padding: 16px;
-    border-radius: 16px;
-    border: 1px solid #fff;
-
-    margin-top: 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: .2s;
-}
-
-.actions > button {
-    margin-left: 8px;
-}
-
-.actions button i {
+i.material-icons {
     margin-left: 4px;
 }
 
-.container button.speak {
-    background-color: #00fa9a;
-}
-
-.container button.speak:hover {
-    background-color: #07bd77;
-}
-
-.container button.stop {
-    background-color: #FF4655;
-}
-
-.container button.stop:hover {
-    background-color: #a32f39;
-}
+.card {
+    text-align: center;
+} 

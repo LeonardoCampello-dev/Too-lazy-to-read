@@ -13,3 +13,4 @@ function stop() {
 function setText(event) {
     uterance.text = event.target.innerText
 }
+

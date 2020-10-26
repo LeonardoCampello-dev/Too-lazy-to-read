@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lazy</title>
 
-        <link rel="stylesheet" href="index.css">
-        
-    </head>
-    
-    <body>
-        
-        <div class="container">
+<head>
 
-            <img src="book.svg" alt="Book">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy</title>
 
-            <div 
-                class="text" 
-                contenteditable
-                oninput="setText(event)"
-            >Your text here</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-            <div class="actions">
+    <link rel="stylesheet" href="index.css">
 
-                <button class="speak" onclick="speak()">
+</head>
+
+<body>
+
+    <div class="container is-max-desktop">
+
+        <div class="card mt-6">
+
+            <div class="card-image">
+
+                <figure class="mt-6 is-square">
+                    <img src="book.svg" alt="Book">
+                </figure>
+
+            </div>
+
+            <div class="card-content">
+
+                <h2 class="title is-2">Are you lazy? Let me read it to you 🦥</h2>
+
+                <div 
+                    class="block is-size-4 mb-5" 
+                    id="text-box"
+                    contenteditable 
+                    oninput="setText(event)"
+                > Your text here
+                </div>
+
+                <button class="button is-success is-medium" onclick="speak()">
                     Speak
                     <i class="material-icons">record_voice_over</i>
                 </button>
-    
-                <button class="stop" onclick="stop()">
+
+                <button class="button is-info is-medium" onclick="clear()">
+                    Clear
+                    <i class="material-icons">clear_all</i>
+                </button>
+                
+                <button class="button is-danger is-medium" onclick="stop()">
                     Stop
                     <i class="material-icons">pan_tool</i>
                 </button>
 
             </div>
 
-
-
         </div>
-        
-        <script src="index.js"></script>
-        
-    </body>
+
+        <div class="control mt-4">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Built by</span>
+              <span class="tag is-info">Leonardo Campello</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
 </html>
