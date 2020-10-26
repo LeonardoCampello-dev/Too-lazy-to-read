@@ -30,29 +30,32 @@
 
             <div class="card-content">
 
-                <h2 class="title is-2">Are you lazy? Let me read it to you 🦥</h2>
+                <h3 class="title is-3">Are you lazy? Let me read it to you 🦥</h3>
 
                 <div 
-                    class="block is-size-4 mb-5" 
+                    class="is-size-4 mb-5" 
                     id="text-box"
                     contenteditable 
                     oninput="setText(event)"
                 > Your text here
                 </div>
 
-                <button class="button is-success is-medium" onclick="speak()">
-                    Speak
-                    <i class="material-icons">record_voice_over</i>
+                <button 
+                    class="button is-success is-medium is-uppercase" 
+                    onclick="speak()"
+                > Speak
                 </button>
 
-                <button class="button is-info is-medium" onclick="clear()">
-                    Clear
-                    <i class="material-icons">clear_all</i>
+                <button 
+                    class="button is-info is-medium is-uppercase" 
+                    onclick="clear()"
+                >Clear
                 </button>
                 
-                <button class="button is-danger is-medium" onclick="stop()">
-                    Stop
-                    <i class="material-icons">pan_tool</i>
+                <button 
+                    class="button is-danger is-medium is-uppercase" 
+                    onclick="stop()"
+                >Stop
                 </button>
 
             </div>
