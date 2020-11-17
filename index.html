@@ -20,10 +20,30 @@
 
         <div class="card mt-6">
 
+            <div class="control mt-4">
+                <label class="radio">
+                  <input 
+                    type="radio" 
+                    name="language" 
+                    value="pt-BR"
+                    onchange="setLanguage(event)"
+                  > Portuguese
+                </label>
+
+                <label class="radio">
+                  <input 
+                    type="radio" 
+                    name="language" 
+                    value="en"
+                    onchange="setLanguage(event)"
+                  > English
+                </label>
+            </div>
+
             <div class="card-image">
 
                 <figure class="mt-6 is-square">
-                    <img src="book.svg" alt="Book">
+                    <img src="book.svg" class="book-image" alt="Book">
                 </figure>
 
             </div>
@@ -47,7 +67,7 @@
 
                 <button 
                     class="button is-info is-medium is-uppercase" 
-                    onclick="clear()"
+                    onclick="clearText()"
                 >Clear
                 </button>
                 

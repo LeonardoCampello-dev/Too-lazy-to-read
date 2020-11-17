@@ -10,15 +10,19 @@ function stop() {
     speechSynthesis.cancel()
 }
 
-function clear() {
-    document.querySelector('.text-box').innerText = ''
+function clearText() {
+    const textBox = document.querySelector('.text-box')
+
+    textBox.innerText = ''
 }
 
-function setText(event) {
-    uterance.text = event.target.innerText
+function setText(e) {
+    uterance.text = e.target.innerText
 }
 
-function setLang(event) {
-    uterance.lang = event.target.innerText
+function setLanguage(e) {
+    const { value } = e.target
+    
+    uterance.lang = value
 }
 

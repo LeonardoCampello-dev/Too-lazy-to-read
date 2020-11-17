@@ -17,4 +17,10 @@ i.material-icons {
 
 .card {
     text-align: center;
-} 
+}
+
+.book-image {
+    width: 200px;
+    height: 200px;
+}
+
