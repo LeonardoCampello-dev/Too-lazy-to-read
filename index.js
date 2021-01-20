@@ -1,28 +1,27 @@
-const uterance = new SpeechSynthesisUtterance()
+const uterance = new SpeechSynthesisUtterance();
 
-uterance.lang = 'pt-BR'
+uterance.lang = "pt-BR";
 
 function speak() {
-    speechSynthesis.speak(uterance)
+  speechSynthesis.speak(uterance);
 }
 
 function stop() {
-    speechSynthesis.cancel()
+  speechSynthesis.cancel();
 }
 
 function clearText() {
-    const textBox = document.querySelector('.text-box')
+  const textBox = document.querySelector(".text-box");
 
-    textBox.innerText = ''
+  textBox.innerText = "";
 }
 
 function setText(e) {
-    uterance.text = e.target.innerText
+  uterance.text = e.target.innerText;
 }
 
 function setLanguage(e) {
-    const { value } = e.target
-    
-    uterance.lang = value
-}
+  const { value } = e.target;
 
+  uterance.lang = value;
+}
